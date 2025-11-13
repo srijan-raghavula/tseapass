@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS ePASS - Telangana Scholarships</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                primary: '#0d9488',   // Teal-600
+                secondary: '#14b8a6', // Teal-500
+                accent: '#f59e0b',    // Amber-500
+                'accent-hover': '#d97706', // Amber-600
+                light: '#f0fdfa',    // Teal-50
+                dark: '#334155',     // Slate 700
+                base: '#f8fafc',     // Slate 50
+              },
+            },
+            transitionProperty: {
+              'height': 'height',
+              'spacing': 'margin, padding',
+            },
+            animation: {
+              'ticker-scroll': 'ticker-scroll 40s linear infinite',
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'slide-up': 'slide-up 0.5s ease-out forwards',
+            },
+            keyframes: {
+              'ticker-scroll': {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+               'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'slide-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Simple scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      /* Fluid Blob Animation */
+      .blob-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: 0;
+      }
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.3;
+      }
+      .blob1 {
+        width: 400px;
+        height: 400px;
+        background-color: #14b8a6; /* brand-secondary */
+        animation: move 20s infinite alternate;
+        top: -10%;
+        left: -10%;
+      }
+      .blob2 {
+        width: 300px;
+        height: 300px;
+        background-color: #f59e0b; /* brand-accent */
+        animation: move 25s infinite alternate-reverse;
+        bottom: 5%;
+        right: -5%;
+      }
+      @keyframes move {
+        from {
+          transform: translate(0, 0) scale(1);
+        }
+        to {
+          transform: translate(100px, 50px) scale(1.2);
+        }
+      }
+
+      /* Custom Prose Typography for Headings */
+      .prose h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+      }
+      .prose h4 {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
