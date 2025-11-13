@@ -9,22 +9,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Montserrat', 'sans-serif'],
+              sans: ['Poppins', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
             },
             colors: {
               brand: {
-                primary: '#0d9488',   // Teal-600
-                secondary: '#14b8a6', // Teal-500
-                accent: '#f59e0b',    // Amber-500
-                'accent-hover': '#d97706', // Amber-600
-                light: '#f0fdfa',    // Teal-50
+                primary: '#4f46e5',   // Indigo-600
+                secondary: '#6366f1', // Indigo-500
+                accent: '#d946ef',    // Fuchsia-500
+                'accent-hover': '#c026d3', // Fuchsia-600
+                light: '#eef2ff',    // Indigo-50
                 dark: '#334155',     // Slate 700
                 base: '#f8fafc',     // Slate 50
               },
@@ -91,7 +91,7 @@
       .blob1 {
         width: 400px;
         height: 400px;
-        background-color: #14b8a6; /* brand-secondary */
+        background-color: #6366f1; /* brand-secondary */
         animation: move 20s infinite alternate;
         top: -10%;
         left: -10%;
@@ -99,7 +99,7 @@
       .blob2 {
         width: 300px;
         height: 300px;
-        background-color: #f59e0b; /* brand-accent */
+        background-color: #d946ef; /* brand-accent */
         animation: move 25s infinite alternate-reverse;
         bottom: 5%;
         right: -5%;

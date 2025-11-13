@@ -34,12 +34,12 @@ const HeroIllustration: React.FC<{ className?: string }> = ({ className }) => (
     <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" className={className}>
         <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style={{stopColor: '#14b8a6', stopOpacity: 1}} />
-                <stop offset="100%" style={{stopColor: '#0d9488', stopOpacity: 1}} />
+                <stop offset="0%" style={{stopColor: '#6366f1', stopOpacity: 1}} />
+                <stop offset="100%" style={{stopColor: '#4f46e5', stopOpacity: 1}} />
             </linearGradient>
             <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style={{stopColor: '#f59e0b', stopOpacity: 1}} />
-                <stop offset="100%" style={{stopColor: '#fbbf24', stopOpacity: 1}} />
+                <stop offset="0%" style={{stopColor: '#d946ef', stopOpacity: 1}} />
+                <stop offset="100%" style={{stopColor: '#ec4899', stopOpacity: 1}} />
             </linearGradient>
         </defs>
         <rect x="0" y="0" width="500" height="400" rx="20" fill="#fff" />
@@ -48,8 +48,8 @@ const HeroIllustration: React.FC<{ className?: string }> = ({ className }) => (
         <circle cx="250" cy="350" r="25" fill="url(#grad1)" opacity="0.2"/>
         <circle cx="450" cy="80" r="20" fill="url(#grad2)" opacity="0.2"/>
         <rect x="100" y="100" width="300" height="200" rx="10" fill="white" stroke="#e2e8f0" strokeWidth="2" />
-        <text x="250" y="215" fontFamily="Inter, sans-serif" fontSize="48" fontWeight="bold" textAnchor="middle" fill="#0d9488">ePASS</text>
-        <text x="250" y="245" fontFamily="Inter, sans-serif" fontSize="16" textAnchor="middle" fill="#64748b">Govt. of Telangana</text>
+        <text x="250" y="215" fontFamily="Poppins, sans-serif" fontSize="48" fontWeight="bold" textAnchor="middle" fill="#4f46e5">ePASS</text>
+        <text x="250" y="245" fontFamily="Poppins, sans-serif" fontSize="16" textAnchor="middle" fill="#64748b">Govt. of Telangana</text>
     </svg>
 );
 
